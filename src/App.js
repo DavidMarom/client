@@ -8,15 +8,17 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <button onClick={() => login('user', 'pass')}>Login user pass</button>
+        <button onClick={() => login('user', 'pass')}>Login with: user pass</button>
         <br />
-        <button onClick={() => login('david', 'qwe123')}>Login david qwe123</button>
-        <button onClick={logout}>Logout</button>
-        <button onClick={fetchBooks}>Fetch Books</button>
-
-        <br />
-
         <button onClick={() => register('david', 'qwe123')}>Register with username and password: david qwe123</button>
+        <button onClick={() => login('david', 'qwe123')}>Login with: david qwe123</button>
+        <br />
+        <button onClick={logout}>Logout</button>
+
+        <br />
+        <br />
+        <button onClick={fetchBooks}>=== Fetch Books ===</button>
+
       </header>
     </div>
   );
